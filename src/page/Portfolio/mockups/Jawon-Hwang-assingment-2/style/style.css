@@ -1,0 +1,300 @@
+/*     320px both homepage and staffpage css     */
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&display=swap');
+
+h1,h2,h3,h4,p,a{
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  color: #648880;
+}
+
+a{
+  color: white;
+  font-weight: 400;
+  padding-left: .5rem;
+}
+
+a:hover{
+  color: #648880;
+ }
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box
+ }
+
+header{
+  background-color: #293f50;
+  text-align: center; 
+}
+
+header .logo{
+  text-align: start;
+}
+
+header .top, main, footer div{
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+header .logo h1{
+  font-weight: 100;
+  color: white;
+}
+
+header .logo{
+  display: inline-block;
+  /* width: 130px;
+  margin: 0 auto; */
+  border-top: 3px solid #648880 ;
+  padding-top: .5rem;
+}
+
+header .navigation{
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+header .navigation ul{
+  margin-top: 10px;
+}
+ 
+header li{
+  display: inline;
+  padding: 2px;
+}  
+
+header a{
+  text-decoration: none;
+  font-size: 80%;
+}
+
+footer{
+  background-color: #293f50 ;
+}
+
+footer div{
+  padding: 40px 15px ;
+}
+
+footer p{
+  font-size: 70%;
+  font-weight: 400;
+}
+
+footer ul{
+  margin-top: 10px;
+}
+
+footer ul li{
+  display: inline;
+}
+
+footer ul li a{
+  text-decoration: none;
+  font-size: 70%;
+}
+
+/*                 320px Home page css               */
+
+header .mainheader_description{
+  max-width: 800px;
+  margin: 0 auto;
+  padding-bottom: 60px;
+  line-height: 2.5rem;
+}
+
+header .mainheader_description h3:first-child{
+  color: white;
+  padding-bottom: 15px;
+}
+
+header .mainheader_description h3:nth-child(2){
+  font-weight: 100;
+  padding: 12px;
+}
+
+header .contact_us{
+  border: white solid 1px;
+  border-radius: 5px;
+  padding: 15px 20px;
+  background-color: #293f50;
+  margin-top: 20px;
+}
+
+header .contact_us h4{
+  color: white;
+  font-weight: 400;
+}
+
+header .contact_us:hover{
+  background-color: #648880 ;
+  cursor: pointer;
+}
+
+header .contact_us:active{
+  background-color: #293f50;
+}
+
+.homepage_main{
+  margin: 0 auto;
+  padding: 30px 10px 60px 10px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.homepage_main section{
+  padding-top: 50px;
+  max-width: 300px;
+}
+
+.homepage_main img{
+  width: 100%;
+  border-radius: 5px;
+  margin: 20px auto;
+}
+
+.homepage_main p:first-child{
+  color: gray;
+  font-weight: 400;
+  font-size: 85%;
+}
+
+.homepage_main h3{
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.homepage_main p:last-child{
+  font-weight: 400;
+}
+
+/*                   min-width-500px Homepage css                 */
+
+@media screen and (min-width : 500px) {
+  header .top{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  header .navigation{
+    text-align: end;
+  }
+
+  .homepage_main{
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  footer div{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+/*                   min-width-915px Homepage css                 */
+
+@media screen and (min-width : 920px) {
+  .homepage_main{
+    justify-content: space-between;
+  }
+}
+ 
+
+/*                    320px staff page css                      */
+
+header .staffheader_description {
+  background-image: linear-gradient(to right, #a1d3b0, #f6f1d3);
+  margin: 0px auto;
+  padding: 30px 10px;  
+}
+
+header .staffheader_description p{
+  padding-top: 10px;
+  line-height: 25px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.staffpage_main section{
+  padding: 10px;
+}
+
+.staffpage_main section h2,h4,p{
+  padding: 10px 0;
+}
+
+.staffpage_main section h2{
+  color: gray;
+}
+
+.staffpage_main section h4{
+  color: hsl(0,0%,70%);
+  font-weight: 400;
+  font-size: 90%;
+}
+
+.staffpage_main section p{
+  font-size: 90%;
+  font-weight: 400;
+}
+
+.staffpage_main .imagebox{
+  border: hsl(0,0%,80%) solid 1px;
+  border-radius: 5px;
+  margin: 70px auto 50px auto;
+  text-align: center;
+  max-width: 236px;
+}
+
+.staffpage_main .imagebox img{
+  width: 45%;
+  border-radius: 50%;
+  position: relative;
+  bottom: 55px;
+}
+
+.staffpage_main .imagebox p{
+  position: relative;
+  bottom: 30px;
+  color: #648880;
+}
+
+/*            min-768px(Ipad) staff page              */
+
+@media screen and (min-width : 768px) {
+  .staffpage_main section{
+    display: flex;
+    flex-direction: row;
+    
+  }
+  .staffpage_main section .imagebox{
+    width: 236px;
+    height: 165.3px;
+    flex-shrink: 0;
+    margin-left: 20px;
+  }
+}
+
+@media screen and (min-width : 980px) {
+  .staffheader_description p {
+    padding-left: 0;
+    padding-right: 0;
+    
+  }
+  .staffpage_main section{
+    padding-left: 0;
+    padding-right: 0;
+  }
+}  
+  
+
+
+
+
+
+

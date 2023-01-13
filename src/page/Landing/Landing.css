@@ -1,0 +1,12 @@
+.Landing {
+  background-color: black;
+}
+.Welcome {
+  color: white;
+  align-items: center;
+  text-align: center;
+  font-weight: 400;
+  font-size: 50px;
+  font-style: sans-serif;
+  box-shadow: white 0px 5px 30px;
+}

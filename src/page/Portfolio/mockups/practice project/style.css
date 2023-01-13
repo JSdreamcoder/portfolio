@@ -1,0 +1,184 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+}
+
+header,
+footer{
+  background-color: hsl(234, 80%, 21%);
+  width: 100%;
+}
+
+
+header{
+  text-align: center;
+}
+
+header h1{
+  padding-bottom: 1.5rem; 
+}
+
+header ul{
+  padding-bottom: 0.5rem;
+}
+header li{
+  display: inline;
+  padding: 0,5rem 0;
+}
+
+header a{
+  text-decoration: none;
+  padding: 0 0.2rem;
+}
+
+header a:hover{
+  font-size: 1.2rem;
+}
+
+main{
+  background-color: hsl(222,94%,26%);
+  padding-bottom: 5rem;
+  padding-top: 5rem;
+  text-align: center;
+}
+
+main .box:last-child{
+  padding: 5rem 1rem ;
+  border-top: black solid 2px;
+}
+.team-description h2,
+.team-description p{
+  padding-bottom: 2rem;
+}
+
+.team-introduce{
+  display: flex;
+  flex-wrap: wrap;
+}
+.team1,.team2,.team3,.team4{
+  width: 340px ;
+  
+  margin: 0 auto;
+}
+
+.team-introduce img{
+  width: 100%;
+ 
+}
+
+.team-name{
+  background: linear-gradient(109.8deg,rgba(250,111,152,1) 5.6%,rgba(255,189,55,1) 91.5% );
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+  bottom: 2rem;
+}
+
+.business-model h2,.business-model p{
+  padding: 10px 0;
+  font-weight: 400;
+}
+
+.business-model img{
+  max-width: 500px;
+}
+
+.business-model button{
+  background: linear-gradient(109.8deg,rgba(250,111,152,1) 5.6%,rgba(255,189,55,1) 91.5% );
+  padding: .7rem 1rem;
+  border: none;
+  border-radius: 20px;
+  margin-top: 10px;
+}
+
+.business-model button:hover{
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+.business-model img{
+  width: 100%;
+  margin: 3rem 0;
+}
+
+footer{
+  padding: 1rem .5rem;
+}
+
+footer p{
+  font-size: 50%;
+}
+
+@media screen and (min-width:700px){
+  .team1,.team2,.team3,.team4{
+    width: 320px ;
+  } 
+  
+  header div.box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 1rem;
+  }
+
+  header h1{
+    padding: 1rem 0;
+    
+  }
+  header ul{
+    padding-top: 1.5rem;
+  }
+
+  header a{
+    padding: 0,5rem;
+  }
+
+  
+
+  footer div.box{
+    display: flex;
+    justify-content: space-between;
+    padding:1rem;
+  }
+
+  footer p:first-child{
+    padding-top: 1rem;
+  }
+  
+  
+}
+
+@media screen and (min-width:1100px){
+  .team1,.team2,.team3,.team4{
+    width: 250px ;
+  } 
+  
+  .business-model{
+    display: flex;
+  }
+
+  header div.box{
+    max-width: 1140px;
+    margin: 0 auto;
+  }
+
+  main section{
+    max-width: 1140px;
+    margin: 0 auto;
+  }
+
+  footer .box{
+    max-width: 1140px;
+    margin: 0 auto;
+  }
+
+  main .business-model{
+    text-align: left;
+  }
+  
+}  
+
+
+

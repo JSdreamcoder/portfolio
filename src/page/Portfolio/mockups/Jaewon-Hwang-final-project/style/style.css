@@ -1,0 +1,395 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*                         width : 375px                 */
+main,
+footer {
+  padding: 0 2rem;
+}
+
+p,
+h2,
+h4,
+a {
+  letter-spacing: 0px;
+  font-weight: 100;
+  text-shadow: 0 0 1px;
+}
+
+img {
+  width: 100%;
+}
+
+header nav {
+  display: none;
+}
+
+.shadow {
+  box-shadow: 0 1px 10px gray;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+.top strong {
+  padding: 0 0.5rem 0 0;
+}
+
+.top p {
+  font-weight: 500;
+  letter-spacing: 5px;
+}
+
+.top {
+  padding: 1.2rem 2rem;
+  background-color: white;
+  width: 100%;
+}
+
+.logo strong {
+  background-color: black;
+  font-size: 2.4rem;
+  color: white;
+  padding: 0.4rem 1.2rem;
+  opacity: 0.7;
+}
+
+.logo p {
+  display: none;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../images/architect.jpg);
+  background-size: cover;
+  height: 55vw;
+  padding-top: 1.7rem;
+}
+
+.projects h2 {
+  margin-top: 4.5rem;
+  border-bottom: lightgrey solid 1px;
+  font-weight: 500;
+  font-size: 1.4rem;
+  padding-bottom: 1.2rem;
+}
+
+.projects h4 {
+  padding: 0.7rem 1rem;
+  background-color: black;
+  display: inline-block;
+  color: white;
+  font-weight: 500;
+  font-size: 90%;
+}
+
+.project-1 {
+  background-image: url(../images/house1.png);
+  width: 100%;
+  height: 55vw;
+  background-size: cover;
+  margin-top: 2.5rem;
+  font-size: 1.1rem;
+}
+
+.project-2 {
+  background-image: url(../images/house2.jpg);
+  width: 100%;
+  height: 55vw;
+  background-size: cover;
+  margin-top: 0.9rem;
+  font-size: 1.1rem;
+}
+
+.project-3 {
+  background-image: url(../images/house3.jpg);
+  width: 100%;
+  height: 55vw;
+  background-size: cover;
+  margin-top: 0.9rem;
+  font-size: 1.1rem;
+}
+
+.project-4 {
+  background-image: url(../images/house4.jpg);
+  width: 100%;
+  height: 55vw;
+  background-size: cover;
+  margin-top: 0.9rem;
+  font-size: 1.1rem;
+}
+
+.project-5 {
+  background-image: url(../images/house5.jpg);
+  width: 100%;
+  height: 55vw;
+  background-size: cover;
+  margin-top: 0.9rem;
+  font-size: 1.1rem;
+}
+
+.project-6 {
+  background-image: url(../images/house6.png);
+  width: 100%;
+  height: 55vw;
+  background-size: cover;
+  margin-top: 0.9rem;
+  font-size: 1.1rem;
+}
+
+.project-7 {
+  background-image: url(../images/house7.png);
+  width: 100%;
+  height: 55vw;
+  background-size: cover;
+  margin-top: 0.9rem;
+  font-size: 1.1rem;
+}
+
+.project-8 {
+  background-image: url(../images/house8.png);
+  width: 100%;
+  height: 55vw;
+  background-size: cover;
+  margin-top: 0.9rem;
+  font-size: 1.1rem;
+}
+
+.about {
+  margin: 5rem 0;
+}
+
+.about h2:first-child {
+  padding-bottom: 1.3rem;
+  border-bottom: 1px solid lightgray;
+}
+
+.about p {
+  font-weight: 500;
+  padding: 1.2rem 0 2rem 0;
+  line-height: 23px;
+}
+
+.card {
+  padding: 1rem 0;
+}
+
+.card img {
+  filter: grayscale(0.8);
+  padding-bottom: 1rem;
+}
+
+.card h4 {
+  padding-top: 1.5rem;
+  color: gray;
+}
+
+.card p {
+  padding-bottom: 1rem;
+}
+
+.card a {
+  display: block;
+  text-align: center;
+  padding: 0.8rem 0;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 1.2rem;
+  background-color: rgb(240, 240, 240);
+}
+
+.card a:hover {
+  font-style: italic;
+  font-size: 1.3rem;
+  color: tomato;
+  transition: font-size 1s;
+}
+
+.contact h2 {
+  border-bottom: solid 0.5px lightgray;
+  padding-bottom: 1.5rem;
+}
+
+.contact p {
+  padding-top: 1.2rem;
+  font-weight: 500;
+}
+
+i {
+  position: relative;
+  text-align: end;
+  left: 92%;
+  top: 29px;
+  color: gray;
+}
+
+input {
+  margin-top: px;
+}
+
+.contact input {
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 0.6rem;
+  border: solid gray 1px;
+  font-size: 1rem;
+  text-align: justify;
+}
+
+.contact .submit {
+  width: 160px;
+  background-color: black;
+  color: white;
+  border: 0;
+  margin-top: 1rem;
+  margin-bottom: 2.5rem;
+  text-align: center;
+}
+
+.contact .submit:hover {
+  color: black;
+  background-color: white;
+  border: 1px solid black;
+  box-shadow: 1px 1px 3px black;
+  transition: color 1s;
+  transition: background-color 1s;
+  cursor: pointer;
+}
+
+footer {
+  height: 2rem;
+  background-color: black;
+  margin-top: 0.3rem;
+}
+
+/*  ------------------------650px--------------------------*/
+@media only screen and (min-width: 650px) {
+  .top nav {
+    display: block;
+  }
+
+  .top ul {
+    display: flex;
+  }
+
+  .top li {
+    list-style: none;
+    padding-left: 2.5rem;
+  }
+
+  .top a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    letter-spacing: 4px;
+  }
+
+  .top a:hover {
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: tomato;
+    transition: font-size 1s;
+  }
+
+  .top {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .logo p {
+    display: inline;
+    color: white;
+    font-size: 2.1rem;
+    letter-spacing: 5px;
+    margin-left: 0.9rem;
+  }
+
+  .projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  .projects h2 {
+    width: 100%;
+  }
+
+  .projects div {
+    width: 48.7%;
+    height: 30vw;
+  }
+
+  .about {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .about .description {
+    width: 100%;
+  }
+
+  .card {
+    width: 48.8%;
+  }
+
+  i {
+    left: 95%;
+  }
+}
+
+/* -----------------------700px------------------------- */
+@media only screen and (min-width: 700px) {
+  .projects div {
+    width: 48.8%;
+  }
+}
+
+/* ----------------------800px------------------------- */
+@media only screen and (min-width: 800px) {
+  .projects div {
+    width: 48.9%;
+  }
+
+  i {
+    left: 96.5%;
+  }
+}
+
+/* ----------------------900px------------------------- */
+@media only screen and (min-width: 900px) {
+  .projects div {
+    width: 49%;
+  }
+}
+
+/* ----------------------1280px------------------------ */
+@media only screen and (min-width: 1280px) {
+  .projects div {
+    width: 24%;
+    max-height: 217.6px;
+  }
+
+  .card {
+    width: 24%;
+  }
+
+  .top,
+  .bottom,
+  section,
+  main {
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+
+  .logo {
+    max-height: 676.8px;
+  }
+}

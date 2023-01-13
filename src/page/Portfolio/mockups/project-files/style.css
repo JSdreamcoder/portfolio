@@ -1,0 +1,316 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/*         375px          */
+nav ol,
+nav a {
+  display: none;
+}
+
+nav {
+  background: linear-gradient(to bottom, hsl(0, 0%, 20%), hsl(0, 0%, 2%));
+  padding-bottom: 0px;
+  box-shadow: 0px 2px 5px white;
+}
+
+nav .inner-nav {
+  border-bottom: hsl(343.64, 97.58%, 51.37%) solid 3px;
+}
+
+.logo {
+  color: white;
+  text-align: center;
+}
+
+.logo i,
+.logo strong {
+  font-size: 2.5rem;
+}
+
+main section:first-child {
+  background: linear-gradient(to bottom, hsl(0, 0%, 20%), hsl(0, 0%, 2%));
+}
+
+main header {
+  padding: 4rem 2rem;
+}
+
+main .who-we-are {
+  color: white;
+}
+
+main .who-we-are h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+main .who-we-are p {
+  font-size: 1.3rem;
+  padding-bottom: 1rem;
+}
+
+main .sign-up {
+  background-color: #fc074c;
+  text-align: center;
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+.sign-up input {
+  border-radius: 5px;
+  font-size: 0.7rem;
+  border: 1px solid gray;
+}
+
+main .sign-up * {
+  margin-bottom: 10px;
+  padding: 10px;
+  width: 100%;
+}
+
+.sign-up h2,
+.sign-up .seperator,
+.sign-up p {
+  color: white;
+}
+
+.sign-up .button {
+  color: #fc074c;
+  background-color: white;
+  border-radius: 5px;
+  padding: 7px;
+}
+
+.sign-up .button-box {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+}
+
+.button-box div:first-child {
+  margin-right: 30px;
+  display: flex;
+}
+
+.button-box div {
+  display: flex;
+}
+
+.button-box div * {
+  padding: 0;
+  margin: 0;
+}
+
+.button-box i {
+  position: relative;
+  top: 2px;
+  padding: 0;
+}
+
+.sign-up .by {
+  font-size: 0.9rem;
+}
+
+.button-box div p {
+  color: red;
+  position: relative;
+  right: 28px;
+  padding: 0;
+  font-size: 1.1rem;
+}
+
+.sign-up a {
+  color: white;
+  padding: 0;
+}
+
+.who-we-work-with {
+  background-color: #fedfe9;
+  padding: 3rem 1rem 2rem 1rem;
+}
+
+.who-we-work-with h2 {
+  font-size: 1.6rem;
+  width: 90%;
+  text-align: center;
+  margin: 1rem auto;
+  color: #fc074c;
+}
+
+.logos div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logos img {
+  width: 40%;
+}
+
+.buy-now-section {
+  background-color: #0f0f0f;
+  padding: 1rem 1rem;
+}
+
+.info {
+  background: linear-gradient(to bottom, hsl(0, 0%, 65.1%), hsl(0, 0%, 41%));
+  margin: 4rem auto;
+  text-align: center;
+  color: white;
+}
+
+.info i {
+  background-color: #fc074c;
+  padding: 1.5rem;
+  border-radius: 50%;
+  font-size: 2rem;
+  position: relative;
+  bottom: 2.5rem;
+}
+
+.info li {
+  list-style: none;
+}
+
+.info ol {
+  margin-bottom: 3rem;
+}
+
+.info .price {
+  margin-bottom: 0.5rem;
+  font-weight: 900;
+}
+
+.info .buy-now {
+  background-color: #fc074c;
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+
+.built-for-business {
+  background-color: #fedfe9;
+  padding: 3rem;
+}
+
+.built-for-business li {
+  list-style: none;
+  margin-bottom: 1rem;
+}
+
+.built-for-business li * {
+  margin: 15px 0;
+}
+
+.built-for-business li i {
+  color: #fc074c;
+  font-size: 2rem;
+}
+
+.built-for-business li h3 {
+  color: #fc074c;
+}
+
+.built-for-business li a {
+  text-decoration: none;
+  color: #fc074c;
+}
+
+.built-for-business span {
+  color: #fc074c;
+}
+
+footer {
+  background-color: #fc074c;
+  padding: 2rem 0;
+}
+
+footer dl {
+  margin: 2rem auto;
+  width: 30%;
+}
+
+footer dt {
+  margin-bottom: 1rem;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+}
+
+@media only screen and (min-width: 768px) {
+  .logos {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+  }
+
+  .logos div {
+    justify-content: space-around;
+    width: 100%;
+  }
+
+  nav ol,
+  nav a {
+    display: contents;
+  }
+
+  .left-nav {
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+  }
+
+  .inner-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  nav a {
+    color: white;
+    text-decoration: none;
+    padding-top: 10px;
+  }
+
+  nav li {
+    list-style: none;
+    padding-top: 1rem;
+  }
+
+  nav .button {
+    display: block;
+    color: #fc074c;
+    background-color: white;
+    margin-right: 0.5rem;
+    padding: 0.5rem 0.8rem;
+    border-radius: 5px;
+    border: #fc074c solid 1px;
+  }
+
+  .buy-now-section {
+    padding: 1rem 0;
+  }
+  .section-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 2rem;
+  }
+
+  .info {
+    width: 45%;
+    margin: 2rem 0;
+  }
+
+  .built-for-business ul {
+    display: flex;
+  }
+
+  .built-for-business li {
+    width: 30%;
+  }
+}

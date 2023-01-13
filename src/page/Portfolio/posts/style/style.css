@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  max-width: 900px;
+}
+
+main,
+footer {
+  padding: 0 2rem;
+}
+
+p,
+h2,
+h4,
+a {
+  letter-spacing: 0px;
+  font-weight: 100;
+}
+
+.background {
+  text-align: center;
+  opacity: 0.3;
+  width: 100%;
+  height: 200px;
+  border-bottom: 3px black solid;
+  position: absolute;
+}
+.background img {
+  width: 100%;
+  height: 100%;
+}
+.top {
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+}
+.top h1 {
+  padding-bottom: 2rem;
+  border: ;
+  opacity: 1;
+}
+.top h3 {
+  padding-bottom: 1rem;
+}
+
+main img {
+  width: 70%;
+  position: relative;
+  left: 15%;
+}
+
+main h2 {
+  padding-top: 2rem;
+}
+
+main p {
+  margin-bottom: 1rem;
+}
+main p {
+  margin-top: 1rem;
+}
+
+main ol {
+  padding-left: 2rem;
+}
+
+main ul {
+  padding-left: 2rem;
+}
+
+main table {
+  border: 1px black solid;
+}
+
+main td {
+  border: 1px black solid;
+  padding: 0.5rem 1rem;
+}
+
+main th {
+  border: 2px black solid;
+  padding: 0.5rem 1rem;
+}
+
+.reference h2 {
+  margin-bottom: 1rem;
+}
+
+.reference a {
+  font-size: smaller;
+  display: block;
+
+  margin-bottom: 1rem;
+}
+
+footer {
+  padding-bottom: 2rem;
+  border-top: 2px lightgray solid;
+  padding-top: 1rem;
+  margin-top: 2rem;
+}
