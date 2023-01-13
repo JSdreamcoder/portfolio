@@ -121,12 +121,12 @@ const Circle = ({ mouseCoordinates }) => {
             <h1>Contact Me</h1>
           </span>
           <h2>
-            <a href="mailto:jaewonh@gmail.com">
+            <a href="mailto:jay.h.developer@gmail.com">
               <MdIcons.MdEmail />
               &nbsp; <span className={styles["Email"]}>Email</span>
             </a>
             <br />
-            <a href="https://www.linkedin.com/in/jaewon-hwang-88947b230/">
+            <a href="https://www.linkedin.com/in/jay-h-88947b230/">
               {" "}
               <AiFillLinkedin />
               &nbsp; <span className={styles["LinkedIn"]}>LinkedIn</span>

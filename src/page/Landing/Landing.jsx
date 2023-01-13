@@ -6,7 +6,7 @@ import { useRef, useEffect, useState } from "react";
 const Landing = ({ mouseCoordinates }) => {
   return (
     <div className="Landing">
-      <div className="Welcome">J W </div>
+      <div className="Welcome">Jay H </div>
 
       <Mouse></Mouse>
       <Circle mouseCoordinates={mouseCoordinates}></Circle>
