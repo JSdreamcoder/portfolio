@@ -35,7 +35,7 @@ function App() {
             element={<Landing mouseCoordinates={mouseCoordinates}></Landing>}
           ></Route>
           <Route
-            path="/portfolio"
+            path="portfolio"
             element={<Portfolio mouseCoordinates={mouseCoordinates} />}
           ></Route>
         </Routes>

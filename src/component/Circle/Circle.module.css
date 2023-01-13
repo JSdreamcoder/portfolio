@@ -1,11 +1,29 @@
 * {
   transition: all 0.3s ease-out;
 }
+h1 {
+  font-size: max(3vw, 20px);
+}
+h2 {
+  font-size: 2vw;
+}
+h3,
+p,
+div {
+  font-size: 2vw;
+}
 .Container {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
   width: 100%;
-  height: 100vh;
+  height: 120vh;
+  word-wrap: break-word;
+}
+.test {
+  color: white;
+  width: 300px;
+  background-color: blue;
 }
 .Container a {
   text-decoration: none;
@@ -56,7 +74,7 @@
   transition: all 0.25s ease-out;
 }
 .Circle1::after {
-  border: 5px solid #ecb5b5;
+  border: 5px solid white;
 }
 .Circle1:hover::after {
   transform: scale(1.1) translateZ(-4rem);
@@ -72,26 +90,28 @@
 .Circle1 {
   background-color: rgb(175, 175, 175);
   width: 25%;
+  min-width: 200px;
+  min-height: 200px;
   height: 25vw;
   border-radius: 100%;
   display: flex;
   direction: row;
   align-items: center;
   justify-content: center;
-  box-shadow: #ecb5b5 0px 8px 24px;
+  box-shadow: white 0px 8px 24px;
   z-index: 2;
 }
 .AboutMe,
 .ContactMe {
   width: 20vw;
-  height: 20vh;
+  height: 30vh;
   position: fixed;
-  top: 50%;
+  top: max(50%, 20vh);
   left: 50%;
   transform: translate(-50%, -50%) translateZ(1rem);
   color: white;
   font-weight: bold;
-  font-size: 30px;
+  font-size: 20px;
   z-index: 1;
   transition: all 0.25s ease-out;
 }
@@ -101,39 +121,54 @@
 }
 .AboutMe p {
   font-size: 16px;
+
+  font-family: sans-serif;
+  word-wrap: break-word;
 }
 .AboutMe h2 {
   color: #ecb5b5;
   font-size: 20px;
+  font-family: sans-serif;
 }
 .AboutMe .Content {
-  width: 150%;
-  height: 150%;
-
+  width: 30vw;
+  height: 40vh;
+  opacity: 0;
   transform: scale(0.5) translate(-50%, -50%);
-  transition: all 0.25s ease-out;
+  transition: all 0.55s ease-out;
   line-height: 1px;
+}
+.ClickInAboutMe {
+  margin-left: 20%;
 }
 .AboutMe:hover h1 {
   margin-left: 20px;
   color: #ec6a6a;
   transform: scale(1.2);
 }
-.AboutMe:hover .Content {
-  padding: 10px;
-  transform: scale(1.1) translate(10%, 10%);
+.AboutMe:hover .Click {
+  display: block;
+}
 
+/* .AboutMe:hover .Content {
+  padding: 10px;
+  transform: scale(1.1) translate(0%, 10%);
+  opacity: 1;
   background-color: rgba(0, 0, 0, 0.7);
   border-radius: 10px;
-}
+} */
 
 .MyPicture {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  opacity: 0.5;
+  opacity: 0.1;
   filter: grayscale(100%);
-  transition: all 0.1s ease-out;
+  transition: all 0.5s ease-out;
+}
+.AboutMe:hover + .MyPicture {
+  filter: grayscale(10%);
+  opacity: 0.8;
 }
 .Description {
   color: white;
@@ -158,15 +193,17 @@
   }
 }
 .Circle2::after {
-  border: 5px solid #a6d3c4;
+  border: 5px solid white;
 }
 .Circle2 {
   background-color: white;
-  width: 35%;
-  height: 35vw;
+  width: 25%;
+  min-width: 250px;
+  height: 25vw;
+  min-height: 250px;
   margin-top: 10%;
   border-radius: 100%;
-  box-shadow: #a6d3c4 0px 7px 29px 0px;
+  box-shadow: white 0px 7px 29px 0px;
   text-align: center;
 }
 
@@ -175,24 +212,26 @@
   border-color: #35d39e;
 }
 .Portfolio {
-  width: 30vw;
+  width: 25vw;
   height: 30vh;
   position: absolute;
-  top: 50%;
+  top: max(50%, 20vh);
   left: 50%;
   transform: translate(-50%, -50%) translateZ(6rem);
   color: white;
-  font-size: 50px;
-  /* font-weight: bold; */
+  font-size: 40px;
+  font-weight: bold;
 
   transition: all 0.3s ease-out;
 }
 .Portfolio a {
   transition: all 0.3s ease-out;
+  width: 120%;
 }
 .Click {
   color: white;
   display: none;
+  margin-left: -10%;
   animation: Click 1s linear infinite;
 }
 @keyframes Click {
@@ -229,6 +268,10 @@
   filter: grayscale(100%);
   transition: all 0.1s ease-out;
 }
+.Portfolio:hover ~ .CodingPicture {
+  filter: grayscale(10%);
+  opacity: 1;
+}
 
 /* .CodingPicture:hover {
   width: 100vw;
@@ -239,24 +282,97 @@
   transform: translate(-50%, -50%);
 } */
 .Circle3::after {
-  border: 5px solid #e7dcb5;
+  border: 5px solid white;
 }
 .Circle3 {
-  background-color: #999999;
+  background-color: rgba(255, 255, 255, 0.1);
+
   width: 28%;
+  min-width: 200px;
   height: 28vw;
+  min-height: 200px;
   margin-top: -5%;
   margin-left: 20px;
   border-radius: 100%;
-  box-shadow: #e7dcb5 0px 8px 24px;
+  box-shadow: white 0px 8px 24px;
+  background-color: #343a40;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='49' viewBox='0 0 28 49'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='hexagons' fill='%239C92AC' fill-opacity='0.25' fill-rule='nonzero'%3E%3Cpath d='M13.99 9.25l13 7.5v15l-13 7.5L1 31.75v-15l12.99-7.5zM3 17.9v12.7l10.99 6.34 11-6.35V17.9l-11-6.34L3 17.9zM0 15l12.98-7.5V0h-2v6.35L0 12.69v2.3zm0 18.5L12.98 41v8h-2v-6.85L0 35.81v-2.3zM15 0v7.5L27.99 15H28v-2.31h-.01L17 6.35V0h-2zm0 49v-8l12.99-7.5H28v2.31h-.01L17 42.15V49h-2z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"),
+    linear-gradient(to right top, #343a40, #2b2c31, #211f22, #151314, #000000);
 }
 .Circle3:hover::after {
   transform: scale(1.1) translateZ(-4rem);
   border: 5px solid #e6bd2a;
 }
 .Circle3:hover .ContactMe {
-  transform: scale(1.3) translate(-40%, -10%);
+  transform: scale(1.3) translate(-30%, -20%);
+}
+.Circle3 h1 {
+  animation: flow 4s ease-in-out infinite;
 }
 .Circle3:hover h1 {
   color: #e6bd2a;
+}
+
+.Email,
+.LinkedIn {
+  vertical-align: middle;
+  box-shadow: inset 0 0 0 0 white;
+  color: white;
+  margin: 0 -0.25rem;
+  padding: 0 0.25rem;
+  transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.Email:hover {
+  box-shadow: inset 100px 0 0 0 #e7dcb5;
+  color: white;
+}
+.LinkedIn:hover {
+  box-shadow: inset 130px 0 0 0 #e7dcb5;
+  color: white;
+}
+
+@media only screen and (max-width: 1000px) {
+  .AboutMe .Content {
+    width: 50vw;
+  }
+}
+@media only screen and (max-width: 665px) {
+  .Circle3 {
+    margin-top: -200px;
+  }
+  .AboutMe .Content {
+    width: 60vw;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .Circle1 {
+    margin-top: 50px;
+  }
+  .AboutMe,
+  .ContactMe {
+    left: 50%;
+    width: 45vw;
+  }
+  .AboutMe:hover .Content {
+    width: 100vw;
+    height: 30vh;
+
+    transform: scale(0.8) translate(-30%, 10%);
+  }
+
+  .Circle2 {
+    margin-top: -50px;
+  }
+  .Circle3 {
+    margin-top: -50px;
+  }
+  .BCircle1,
+  .BCircle2 {
+    display: none;
+  }
+  .Portfolio {
+    left: 35%;
+    width: 55vw;
+    font-size: 7vw;
+  }
 }

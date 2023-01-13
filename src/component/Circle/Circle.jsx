@@ -1,7 +1,11 @@
 import styles from "./Circle.module.css";
 import { useRef, useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import MyPicture from "../../images/jaewon.jpg";
 import CodingPicture from "../../images/coding.png";
+import * as MdIcons from "react-icons/md";
+import * as BsIcons from "react-icons/bs";
+import { AiFillLinkedin } from "react-icons/ai";
 const Circle = ({ mouseCoordinates }) => {
   const circle1 = useRef(null);
   const circle2 = useRef(null);
@@ -70,39 +74,64 @@ const Circle = ({ mouseCoordinates }) => {
       <div id="Circle1" className={styles["Circle1"]} ref={circle1}>
         <div className={styles["AboutMe"]}>
           <h1>About Me</h1>
-          <div className={styles["Content"]}>
+          <div className={styles["ClickInAboutMe"]}>
+            <a
+              className={styles["Click"]}
+              href="https://dashing-moxie-864d6b.netlify.app/#about"
+            >
+              click
+            </a>
+          </div>
+          {/* <div className={styles["Content"]}>
             <h2>Introduce</h2>
             <p>Hello, I am Jaewon and Fullstack Developer.</p>
-            <h2>Education</h2>
-            <p>MITT(Software Developer)-Diploma</p>
-            <p>Sungkyunkwan Univ(Civil Eng)-Master's</p>
-            <p>Univ of Seoul(Civil Eng)-Bachelor's</p>
-            <h2>Experience</h2>
-            <p>Samsung(Civil Engineer) -4years</p>
-          </div>
+            <p></p>
+            <p>Skills: ReactJS,.Net MVC,LINQ,MsSQL,Python</p>
+            <div>Skills: ReactJS,.Net MVC,LINQ,MsSQL,Python</div>
+          </div> */}
         </div>
 
         <img src={MyPicture} className={styles["MyPicture"]} />
       </div>
 
       <div id="Circle2" className={styles["Circle2"]} ref={circle2}>
-        <img src={CodingPicture} className={styles["CodingPicture"]} />
         <div className={styles["Portfolio"]}>
-          <a className={styles["Text"]} href="/portfolio">
+          <a
+            href="https://dashing-moxie-864d6b.netlify.app/#projects"
+            className={styles["Text"]}
+            to="/portfolio"
+          >
             Portfolio
           </a>
           <div>
-            <a className={styles["Click"]} href="/portfolio">
+            <a
+              className={styles["Click"]}
+              href="https://dashing-moxie-864d6b.netlify.app/#projects"
+            >
               click
             </a>
           </div>
         </div>
+        <img src={CodingPicture} className={styles["CodingPicture"]} />
       </div>
 
       <div id="Circle3" className={styles["Circle3"]} ref={circle3}>
         <div className={styles["ContactMe"]}>
-          <h1>Contact Me</h1>
-          <h3 className={styles["Email"]}>jaewonhw@gmail.com</h3>
+          <span>
+            <h1>Contact Me</h1>
+          </span>
+          <h2>
+            <a href="mailto:jaewonh@gmail.com">
+              <MdIcons.MdEmail />
+              &nbsp; <span className={styles["Email"]}>Email</span>
+            </a>
+            <br />
+            <a href="https://www.linkedin.com/in/jaewon-hwang-88947b230/">
+              {" "}
+              <AiFillLinkedin />
+              &nbsp; <span className={styles["LinkedIn"]}>LinkedIn</span>
+            </a>
+          </h2>
         </div>
       </div>
       <div className={styles["BackgroundCircle"]} ref={backgroundCircle}>

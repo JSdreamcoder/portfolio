@@ -1,6 +1,6 @@
 .mouseContainer {
   text-align: center;
-
+  margin-top: 20px;
   padding-top: 10px;
   padding-bottom: 10px;
 }
@@ -101,6 +101,7 @@
 }
 .text {
   position: relative;
+  font-size: max(12px, 2vw);
   color: white;
   margin-top: 1rem;
   animation: text_disapeared 2s linear infinite, text_move 2s ease-out infinite;
